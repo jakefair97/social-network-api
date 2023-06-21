@@ -22,10 +22,10 @@ connection.once('open', async () => {
     ];
 
     const emails = [
-        'Aaren@gmail.com',
-        'Aarez@gmail.com',
-        'Aazaan@gmail.com',
-        'Abaan@gmail.com',
+        'aaren@gmail.com',
+        'aarez@gmail.com',
+        'aazaan@gmail.com',
+        'abaan@gmail.com',
     ]
 
 
@@ -40,7 +40,6 @@ connection.once('open', async () => {
     }
 
     await User.collection.insertMany(users);
-    await Thought.collection.insertMany(thoughts);
 
     // loop through the saved thoughts, for each thought we need to generate a thought response and insert the thought responses
     console.table(users);

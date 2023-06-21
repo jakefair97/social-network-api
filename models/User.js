@@ -16,7 +16,7 @@ const userSchema = new Schema(
                 validator: function(v) {
                     return /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/.test(v)
                 },
-                message: props => `${props} is not a valid email`
+                message: `not a valid email`
             }
         },
         thoughts: [
@@ -42,7 +42,7 @@ const userSchema = new Schema(
 
 userSchema
     .virtual('friendCount')
-    .get(() => `${this.friends.length}`);
+    .get(function () {return this.friends.length});
 
 
 const User = model('user', userSchema);
