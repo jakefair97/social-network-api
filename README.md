@@ -15,7 +15,7 @@ To run the application, connect to a MongoDB deployment in Compass by connecting
 
 You can view a walkthrough video of how to run the application at the link below: 
 
-[https://drive.google.com/file/d/1GIrKlPpx9OMjLruQc90Le2LS1P8601Yk/view]
+https://drive.google.com/file/d/1GIrKlPpx9OMjLruQc90Le2LS1P8601Yk/view
 
 ## License
 Please refer to the LICENSE in the repo.
